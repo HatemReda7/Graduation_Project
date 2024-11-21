@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
           initialRoute: HomeScreen.routeName,
           routes: {
             HomeScreen.routeName : (context) => const HomeScreen(),
-            CreateCvScreen.routeName : (context) =>  const CreateCvScreen(),
+            CreateCvScreen.routeName : (context) =>  CreateCvScreen(),
           },
         );
       },
