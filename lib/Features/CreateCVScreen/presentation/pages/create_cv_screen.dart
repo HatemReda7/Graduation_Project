@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:graduation_project_main/Core/Utils/app_colors.dart';
 import 'package:graduation_project_main/Features/CreateCVScreen/presentation/widgets/contact_information_page.dart';
+import 'package:graduation_project_main/Features/CreateCVScreen/presentation/widgets/education_details_page.dart';
 import 'package:graduation_project_main/Features/CreateCVScreen/presentation/widgets/work_experience_page.dart';
 
 class CreateCvScreen extends StatefulWidget {
@@ -16,8 +17,9 @@ class CreateCvScreen extends StatefulWidget {
 
 class _CreateCvScreenState extends State<CreateCvScreen> {
   List<Widget> tabs = [
-    const ContactInformationPage(),
-    const WorkExperiencePage(),
+     const ContactInformationPage(),
+     const WorkExperiencePage(),
+    const EducationDetailsPage(),
   ];
 
   int selectedIndex = 0;

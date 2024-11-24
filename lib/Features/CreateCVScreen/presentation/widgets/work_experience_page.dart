@@ -11,12 +11,10 @@ class WorkExperiencePage extends StatefulWidget {
 }
 
 class _WorkExperiencePageState extends State<WorkExperiencePage> {
+
   List<Widget> cards = [
     WorkExperienceItem(),
   ];
-
-  int noOfItems = 1;
-
   List<bool> visibility = [true];
 
   void deleteCard(int index) {
