@@ -57,11 +57,11 @@ class EducationDetailsItem extends StatelessWidget {
             ),
             disabledBorder: OutlineInputBorder(
               borderRadius: BorderRadius.circular(12.r),
-              borderSide: BorderSide(color: grey),
+              borderSide: const BorderSide(color: grey),
             ),
             focusedBorder: OutlineInputBorder(
               borderRadius: BorderRadius.circular(12.r),
-              borderSide: BorderSide(color: grey),
+              borderSide: const BorderSide(color: grey),
             ),
           ),
         ),
@@ -114,11 +114,11 @@ class EducationDetailsItem extends StatelessWidget {
                   ),
                   disabledBorder: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(12.r),
-                    borderSide: BorderSide(color: grey),
+                    borderSide: const BorderSide(color: grey),
                   ),
                   focusedBorder: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(12.r),
-                    borderSide: BorderSide(color: grey),
+                    borderSide: const BorderSide(color: grey),
                   ),
                 ),
               ),
@@ -147,11 +147,11 @@ class EducationDetailsItem extends StatelessWidget {
                   ),
                   disabledBorder: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(12.r),
-                    borderSide: BorderSide(color: grey),
+                    borderSide: const BorderSide(color: grey),
                   ),
                   focusedBorder: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(12.r),
-                    borderSide: BorderSide(color: grey),
+                    borderSide: const BorderSide(color: grey),
                   ),
                 ),
               ),
@@ -196,11 +196,11 @@ class EducationDetailsItem extends StatelessWidget {
                   ),
                   disabledBorder: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(12.r),
-                    borderSide: BorderSide(color: grey),
+                    borderSide: const BorderSide(color: grey),
                   ),
                   focusedBorder: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(12.r),
-                    borderSide: BorderSide(color: grey),
+                    borderSide: const BorderSide(color: grey),
                   ),
                 ),
                 items: months
@@ -231,11 +231,11 @@ class EducationDetailsItem extends StatelessWidget {
                   ),
                   disabledBorder: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(12.r),
-                    borderSide: BorderSide(color: grey),
+                    borderSide: const BorderSide(color: grey),
                   ),
                   focusedBorder: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(12.r),
-                    borderSide: BorderSide(color: grey),
+                    borderSide: const BorderSide(color: grey),
                   ),
                 ),
                 items: years.map<DropdownMenuItem<int>>((int year) {
@@ -268,11 +268,11 @@ class EducationDetailsItem extends StatelessWidget {
                   ),
                   disabledBorder: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(12.r),
-                    borderSide: BorderSide(color: grey),
+                    borderSide: const BorderSide(color: grey),
                   ),
                   focusedBorder: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(12.r),
-                    borderSide: BorderSide(color: grey),
+                    borderSide: const BorderSide(color: grey),
                   ),
                 ),
                 items: months
@@ -303,11 +303,11 @@ class EducationDetailsItem extends StatelessWidget {
                   ),
                   disabledBorder: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(12.r),
-                    borderSide: BorderSide(color: grey),
+                    borderSide: const BorderSide(color: grey),
                   ),
                   focusedBorder: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(12.r),
-                    borderSide: BorderSide(color: grey),
+                    borderSide: const BorderSide(color: grey),
                   ),
                 ),
                 items: years.map<DropdownMenuItem<int>>((int year) {
@@ -360,11 +360,11 @@ class EducationDetailsItem extends StatelessWidget {
             ),
             disabledBorder: OutlineInputBorder(
               borderRadius: BorderRadius.circular(12.r),
-              borderSide: BorderSide(color: grey),
+              borderSide: const BorderSide(color: grey),
             ),
             focusedBorder: OutlineInputBorder(
               borderRadius: BorderRadius.circular(12.r),
-              borderSide: BorderSide(color: grey),
+              borderSide: const BorderSide(color: grey),
             ),
           ),
         ),

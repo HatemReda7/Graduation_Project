@@ -11,7 +11,6 @@ class WorkExperiencePage extends StatefulWidget {
 }
 
 class _WorkExperiencePageState extends State<WorkExperiencePage> {
-
   List<Widget> cards = [
     WorkExperienceItem(),
   ];
@@ -31,14 +30,14 @@ class _WorkExperiencePageState extends State<WorkExperiencePage> {
       child: Column(
         children: [
           SizedBox(
-                  height: 400.h,
-                  child: cards.isEmpty
-                      ? Center(
-                      child: Text(
-                        "No Work Experience Added!",
-                        style: TextStyle(fontSize: 20.sp, color: darkBlue),
-                      ))
-                      : ListView.separated(
+            height: 400.h,
+            child: cards.isEmpty
+                ? Center(
+                    child: Text(
+                    "No Work Experience Added!",
+                    style: TextStyle(fontSize: 20.sp, color: darkBlue),
+                  ))
+                : ListView.separated(
                     separatorBuilder: (context, index) => Divider(
                       color: darkBlue,
                       thickness: 5.h,
@@ -79,7 +78,7 @@ class _WorkExperiencePageState extends State<WorkExperiencePage> {
                       );
                     },
                   ),
-                ),
+          ),
           SizedBox(
             height: 10.h,
           ),
@@ -91,14 +90,19 @@ class _WorkExperiencePageState extends State<WorkExperiencePage> {
               },
               style: ButtonStyle(
                   fixedSize: WidgetStatePropertyAll(Size(160.w, 50.h)),
-                  backgroundColor:
-                       WidgetStatePropertyAll(blue),
+                  backgroundColor: const WidgetStatePropertyAll(blue),
                   shape: WidgetStatePropertyAll(RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(20.r)))),
               child: Row(
                 children: [
-                  Icon(Icons.add_circle, color: Colors.white,size: 25.sp,),
-                  SizedBox(width: 10.w,),
+                  Icon(
+                    Icons.add_circle,
+                    color: Colors.white,
+                    size: 25.sp,
+                  ),
+                  SizedBox(
+                    width: 10.w,
+                  ),
                   Text(
                     "Add New",
                     style: TextStyle(color: Colors.white, fontSize: 18.sp),
@@ -112,8 +116,7 @@ class _WorkExperiencePageState extends State<WorkExperiencePage> {
               onPressed: () {},
               style: ButtonStyle(
                   fixedSize: WidgetStatePropertyAll(Size(250.w, 50.h)),
-                  backgroundColor:
-                    WidgetStatePropertyAll(orange),
+                  backgroundColor: const WidgetStatePropertyAll(orange),
                   shape: WidgetStatePropertyAll(RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(12.r)))),
               child: Row(
