@@ -15,7 +15,7 @@ class _OtherInformationItemState extends State<OtherInformationItem> {
 
   List<String> skills = [];
 
-  final TextEditingController referenceController = TextEditingController();
+  // final TextEditingController referenceController = TextEditingController();
 
   final TextEditingController skillController = TextEditingController();
 
@@ -29,14 +29,14 @@ class _OtherInformationItemState extends State<OtherInformationItem> {
     });
   }
 
-  void addReference() {
-    if (referenceController.text.isNotEmpty) {
-      setState(() {
-        references.add(referenceController.text);
-        referenceController.clear();
-      });
-    }
-  }
+  // void addReference() {
+  //   if (referenceController.text.isNotEmpty) {
+  //     setState(() {
+  //       references.add(referenceController.text);
+  //       referenceController.clear();
+  //     });
+  //   }
+  // }
 
   void addSkill() {
     if (skillController.text.isNotEmpty) {
@@ -130,7 +130,7 @@ class _OtherInformationItemState extends State<OtherInformationItem> {
         ),
         languages.isNotEmpty
             ? SizedBox(
-                height: 120.h,
+                height: languages.length * 60.h,
                 child: ListView.separated(
                   separatorBuilder: (context, index) => Divider(
                     color: darkBlue,
@@ -231,8 +231,11 @@ class _OtherInformationItemState extends State<OtherInformationItem> {
           keyboardType: TextInputType.name,
           textInputAction: TextInputAction.done,
           style: TextStyle(color: Colors.black, fontSize: 12.sp),
-          onFieldSubmitted: (value) => addSkill,
-          onSaved: (newValue) => addSkill,
+          onFieldSubmitted: (value) {
+            setState(() {
+              addSkill();
+            });
+          },
           decoration: InputDecoration(
             hintText: 'Add a skill',
             suffixIcon: IconButton(
@@ -267,7 +270,7 @@ class _OtherInformationItemState extends State<OtherInformationItem> {
         ),
         skills.isNotEmpty
             ? SizedBox(
-                height: 98.h,
+                height: skills.length * 50.h,
                 child: ListView.builder(
                   itemCount: skills.length,
                   itemBuilder: (context, index) {

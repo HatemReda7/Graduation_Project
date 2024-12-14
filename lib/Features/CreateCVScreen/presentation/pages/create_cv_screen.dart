@@ -4,6 +4,7 @@ import 'package:graduation_project_main/Core/Utils/app_colors.dart';
 import 'package:graduation_project_main/Features/CreateCVScreen/presentation/widgets/contact_information_page.dart';
 import 'package:graduation_project_main/Features/CreateCVScreen/presentation/widgets/education_details_page.dart';
 import 'package:graduation_project_main/Features/CreateCVScreen/presentation/widgets/other_information_page.dart';
+import 'package:graduation_project_main/Features/CreateCVScreen/presentation/widgets/save_page.dart';
 import 'package:graduation_project_main/Features/CreateCVScreen/presentation/widgets/work_experience_page.dart';
 
 class CreateCvScreen extends StatefulWidget {
@@ -21,7 +22,8 @@ class _CreateCvScreenState extends State<CreateCvScreen> {
     const ContactInformationPage(),
     const WorkExperiencePage(),
     const EducationDetailsPage(),
-    const OtherInformationPage()
+    const OtherInformationPage(),
+    const SavePage(),
   ];
 
   int selectedIndex = 0;
