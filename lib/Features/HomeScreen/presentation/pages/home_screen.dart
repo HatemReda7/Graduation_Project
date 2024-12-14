@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:graduation_project_main/Core/Utils/app_colors.dart';
+import 'package:graduation_project_main/Features/ChatScreen/presentation/pages/chat_screen.dart';
 import 'package:graduation_project_main/Features/CreateCVScreen/presentation/pages/create_cv_screen.dart';
 
 class HomeScreen extends StatelessWidget {
   static const String routeName = "HomeScreen";
+
   const HomeScreen({super.key});
 
   @override
@@ -12,7 +15,11 @@ class HomeScreen extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: const Color(0xff98C1D9),
         centerTitle: true,
-        title: const Text("Path2Job"),
+        title: Text(
+          "Path2Job",
+          style: TextStyle(
+              fontWeight: FontWeight.bold, fontSize: 28.sp, color: darkBlue),
+        ),
         elevation: 0,
         toolbarHeight: 90.h,
         shape: RoundedRectangleBorder(
@@ -30,7 +37,7 @@ class HomeScreen extends StatelessWidget {
             mainAxisSize: MainAxisSize.max,
             children: [
               SizedBox(
-                height: 20.h,
+                height: 15.h,
               ),
               Text(
                 "Create a unique resume with your phone!",
@@ -43,24 +50,25 @@ class HomeScreen extends StatelessWidget {
               SizedBox(
                 height: 20.h,
               ),
-              Image.asset("assets/home_screen_item.png",),
+              Image.asset(
+                "assets/home_screen_item.png",
+              ),
               SizedBox(
-                height: 40.h,
+                height: 30.h,
               ),
               Container(
                 height: 50.h,
-                width: 200.w,
+                width: 220.w,
                 alignment: Alignment.center,
                 decoration: BoxDecoration(
-                    color: const Color(0xff98C1D9),
-                    borderRadius: BorderRadius.circular(10)),
+                    color: lightBlue, borderRadius: BorderRadius.circular(10)),
                 child: Text(
-                  "Import from LinkIn",
+                  "Import from LinkedIn",
                   style: TextStyle(fontSize: 18.sp),
                 ),
               ),
               SizedBox(
-                height: 20.h,
+                height: 15.h,
               ),
               InkWell(
                 onTap: () {
@@ -68,11 +76,10 @@ class HomeScreen extends StatelessWidget {
                 },
                 child: Container(
                   height: 50.h,
-                  width: 200.w,
+                  width: 220.w,
                   alignment: Alignment.center,
                   decoration: BoxDecoration(
-                      color: const Color(0xffEE6C4D),
-                      borderRadius: BorderRadius.circular(10)),
+                      color: orange, borderRadius: BorderRadius.circular(10)),
                   child: Text(
                     "Create new CV",
                     style: TextStyle(fontSize: 18.sp),
@@ -80,15 +87,14 @@ class HomeScreen extends StatelessWidget {
                 ),
               ),
               SizedBox(
-                height: 50.h,
+                height: 30.h,
               ),
               Container(
                 height: 50.h,
-                width: 200.w,
+                width: 220.w,
                 alignment: Alignment.center,
                 decoration: BoxDecoration(
-                    color: const Color(0xff3D5A80),
-                    borderRadius: BorderRadius.circular(10)),
+                    color: blue, borderRadius: BorderRadius.circular(10.r)),
                 child: Text(
                   "View Templates",
                   style: TextStyle(fontSize: 18.sp),
@@ -96,6 +102,41 @@ class HomeScreen extends StatelessWidget {
               ),
             ],
           ),
+        ),
+      ),
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
+      floatingActionButton: Padding(
+        padding: EdgeInsets.symmetric(horizontal: 18.w),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            FloatingActionButton(
+              heroTag: null,
+              shape: const CircleBorder(),
+              backgroundColor: Colors.grey,
+              splashColor: blue,
+              onPressed: () {},
+              child: Icon(
+                Icons.settings,
+                color: Colors.black,
+                size: 25.sp,
+              ),
+            ),
+            FloatingActionButton(
+              heroTag: null,
+              shape: const CircleBorder(),
+              backgroundColor: Colors.grey,
+              splashColor: blue,
+              onPressed: () {
+                Navigator.pushNamed(context, ChatScreen.routeName);
+              },
+              child: Icon(
+                Icons.chat,
+                color: Colors.black,
+                size: 25.sp,
+              ),
+            ),
+          ],
         ),
       ),
     );

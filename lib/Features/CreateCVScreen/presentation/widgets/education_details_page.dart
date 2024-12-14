@@ -88,7 +88,7 @@ class _EducationDetailsPageState extends State<EducationDetailsPage> {
               },
               style: ButtonStyle(
                   fixedSize: WidgetStatePropertyAll(Size(160.w, 50.h)),
-                  backgroundColor: WidgetStatePropertyAll(blue),
+                  backgroundColor: const WidgetStatePropertyAll(blue),
                   shape: WidgetStatePropertyAll(RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(20.r)))),
               child: Row(

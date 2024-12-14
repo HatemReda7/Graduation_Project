@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:graduation_project_main/Features/ChatScreen/presentation/pages/chat_screen.dart';
 import 'package:graduation_project_main/Features/CreateCVScreen/presentation/pages/create_cv_screen.dart';
 import 'package:graduation_project_main/Features/HomeScreen/presentation/pages/home_screen.dart';
 
@@ -21,8 +22,9 @@ class MyApp extends StatelessWidget {
           debugShowCheckedModeBanner: false,
           initialRoute: HomeScreen.routeName,
           routes: {
-            HomeScreen.routeName : (context) => const HomeScreen(),
-            CreateCvScreen.routeName : (context) =>  const CreateCvScreen(),
+            HomeScreen.routeName: (context) => const HomeScreen(),
+            CreateCvScreen.routeName: (context) => const CreateCvScreen(),
+            ChatScreen.routeName: (context) => const ChatScreen(),
           },
         );
       },
